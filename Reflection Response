@@ -1,0 +1,8 @@
+1. Is model accuracy alone sufficient to determine whether a machine learning model is reliable in real‑world applications? Explain briefly.
+No. Accuracy can be highly misleading, especially on imbalanced datasets where one class vastly outnumbers the other (e.g., if only 5% of customers churn, a naive model that predicts "No Churn" 100% of the time achieves 95% accuracy while completely failing to identify actual churners). Accuracy treats all classification errors as equal, whereas real-world applications require examining metrics like Precision, Recall, F1-Score, and ROC-AUC to evaluate false positives and false negatives effectively.
+
+2. Identify one potential limitation of this model.
+Logistic Regression assumes a linear relationship between the predictor features (e.g., Age, Payment Delay, Total Spend) and the log-odds of customer churn. It struggles to capture complex, non-linear interactions or multi-variable decision thresholds without manual feature engineering, making it prone to underfitting when faced with nuanced real-world customer behavior.
+
+3. Identify one possible ethical risk if this model were used in real decision‑making.
+If historical dataset features correlate with demographic or socioeconomic attributes (such as age bands, contract lengths, or usage frequency tied to income levels), the model may learn and automate algorithmic bias. This could lead to discriminatory practices—such as unfairly withholding retention offers, discounts, or customer support prioritization from specific demographic groups based on historical biases present in the training data.
